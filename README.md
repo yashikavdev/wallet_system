@@ -1,24 +1,32 @@
-# README
+Wallet System API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Rails API application for managing wallets and transactions. The application manages different wallet types for users, teams, and stocks. It also includes custom authentication using has_secure_password for users.
+Features
 
-Things you may want to cover:
+    User Authentication: Custom sign-in and sign-out system using sessions.
+    Wallets: Wallets are managed for users, teams, and stocks with corresponding transactions.
+    Transactions: Supports credit and debit transactions between wallets.
+    RapidAPI Integration: Fetches data from external services using the RapidAPI.
 
-* Ruby version
+Getting Started
+Prerequisites
 
-* System dependencies
+    Ruby 3.0+
+    Rails 7.0+
+    PostgreSQL or any other supported database
+    Bundler (install it with: gem install bundler)
 
-* Configuration
+Installation
 
-* Database creation
+    Clone the repository: git clone https://github.com/yashikavdev/wallet_system.git
+    bundle install
+    rails db:create
+    rails db:migrate
+    rails db:seed
+    rails server
 
-* Database initialization
+API Documentation
 
-* How to run the test suite
+The API endpoints are organized in a Postman collection, which is available with the project. You can import the collection into Postman for testing the API.
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    Postman Collection: Wallet Transaction System.postman_collection.json
